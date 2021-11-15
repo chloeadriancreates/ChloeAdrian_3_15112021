@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-body {
+body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -22,9 +22,43 @@ header {
   align-items: center;
   box-shadow: inset 0px 10px 10px -5px rgba(0, 0, 0, 0.1);
   color: #353535;
+  padding: 15px 0px;
 }
 .place_text {
   margin-left: 10px;
+  font-weight: 500;
+}
+
+.presentation {
+  background: #F6F6F6;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.presentation_title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0px 20px 20px 20px;
+}
+.presentation_descr {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.btn {
+  border: none;
+  box-shadow: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.btn--gradient {
+  padding: 20px;
+  border-radius: 30px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  font-size: 16px;
   font-weight: 500;
 }
 
