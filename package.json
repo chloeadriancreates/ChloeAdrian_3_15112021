@@ -1,0 +1,20 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chloeadriancreates/ChloeAdrian_3_15112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chloeadriancreates/ChloeAdrian_3_15112021/issues"
+  },
+  "homepage": "https://github.com/chloeadriancreates/ChloeAdrian_3_15112021#readme"
+}
