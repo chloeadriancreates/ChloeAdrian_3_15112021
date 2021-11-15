@@ -1,0 +1,13 @@
+.place {
+    background: $greyMedium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 10px 10px -5px rgba(0,0,0,0.10);
+    color: $greyDark;
+
+    &_text {
+        margin-left: 10px;
+        font-weight: 500;
+    }
+}
