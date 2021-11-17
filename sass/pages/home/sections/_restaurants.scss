@@ -1,0 +1,76 @@
+.restaurants {
+    background: $grey--light;
+    padding: 60px 20px;
+
+    &_title {
+        margin-bottom: 25px;
+    }
+
+    &_card {
+        background: white;
+        border-radius: 15px;
+        margin-bottom: 15px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &_img {
+            height: 175px;
+            width: 100%;
+            border-radius: 15px 15px 0px 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include flex(row, end, start);
+
+            &.paletteDuGout {
+                background-image: url("../img/paletteDuGout.jpg");
+                background-position-y: 95%;
+            }
+
+            &.noteEnchantee {
+                background-image: url("../img/noteEnchantee.jpg");
+                background-position-y: 62%;
+            }
+
+            &.aLaFrancaise {
+                background-image: url("../img/aLaFrancaise.jpg");
+                background-position-y: 100%;
+            }
+
+            &.deliceDesSens {
+                background-image: url("../img/deliceDesSens.jpg");
+                background-position-y: 100%;
+            }
+        }
+
+        &_flag {
+            background: $colorTertiary;
+            margin: 15px;
+            padding: 10px;
+            width: fit-content;
+            color: color.scale($colorTertiary, $lightness: -58%);
+        }
+
+        &_caption {
+            @include flex(row, space-between, center);
+            padding: 20px 15px;
+        }
+
+        &_title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        &_city {
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+        &_heart {
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -109,6 +113,76 @@ header {
 }
 .steps_card:hover .steps_card_caption_icon {
   color: #9356DC;
+}
+
+.restaurants {
+  background: #F6F6F6;
+  padding: 60px 20px;
+}
+.restaurants_title {
+  margin-bottom: 25px;
+}
+.restaurants_card {
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.restaurants_card:last-of-type {
+  margin-bottom: 0;
+}
+.restaurants_card_img {
+  height: 175px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
+}
+.restaurants_card_img.paletteDuGout {
+  background-image: url("../img/paletteDuGout.jpg");
+  background-position-y: 95%;
+}
+.restaurants_card_img.noteEnchantee {
+  background-image: url("../img/noteEnchantee.jpg");
+  background-position-y: 62%;
+}
+.restaurants_card_img.aLaFrancaise {
+  background-image: url("../img/aLaFrancaise.jpg");
+  background-position-y: 100%;
+}
+.restaurants_card_img.deliceDesSens {
+  background-image: url("../img/deliceDesSens.jpg");
+  background-position-y: 100%;
+}
+.restaurants_card_flag {
+  background: #99E2D0;
+  margin: 15px;
+  padding: 10px;
+  width: fit-content;
+  color: #237c66;
+}
+.restaurants_card_caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+}
+.restaurants_card_title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.restaurants_card_city {
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurants_card_heart {
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 h2 {
