@@ -1,10 +1,10 @@
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 /* font-family: 'Shrikhand', cursive; */
 body {
   font-family: "Roboto", sans-serif;
-}
-
-body, h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
 }
 
 header {
@@ -13,6 +13,21 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0px;
+}
+
+.btn {
+  border: none;
+  box-shadow: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.btn--gradient {
+  padding: 20px;
+  border-radius: 30px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .place {
@@ -38,8 +53,6 @@ header {
   text-align: center;
 }
 .presentation_title {
-  font-size: 24px;
-  font-weight: 700;
   padding: 0px 20px 20px 20px;
 }
 .presentation_descr {
@@ -48,18 +61,59 @@ header {
   margin-bottom: 30px;
 }
 
-.btn {
-  border: none;
-  box-shadow: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
+.steps {
+  padding: 50px 20px;
 }
-.btn--gradient {
-  padding: 20px;
-  border-radius: 30px;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+.steps_title {
+  margin-bottom: 35px;
+}
+.steps_card {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
+  background: #F6F6F6;
+  border-radius: 20px;
+  margin: 0px 0px 25px 12.5px;
+  position: relative;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+.steps_card:last-of-type {
+  margin-bottom: 0px;
+}
+.steps_card_number {
+  position: absolute;
+  background: #9356DC;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -12.5px;
+}
+.steps_card_caption {
+  display: flex;
+  align-items: center;
+  margin: 25px 35px;
+}
+.steps_card_caption_icon {
+  margin-right: 20px;
+  color: #7E7E7E;
+  transition: all 0.4s ease;
+}
+.steps_card:hover {
+  background: #F5EDFF;
+}
+.steps_card:hover .steps_card_caption_icon {
+  color: #9356DC;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

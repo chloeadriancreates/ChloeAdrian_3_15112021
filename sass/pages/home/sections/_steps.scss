@@ -1,0 +1,57 @@
+.steps {
+    padding: 50px 20px;
+
+    &_title {
+        margin-bottom: 35px;
+    }
+
+    &_card {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        background: $grey--light;
+        border-radius: 20px;
+        margin: 0px 0px 25px 12.5px;
+        position: relative;
+        box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.15);
+        transition: all 0.4s ease;
+
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        &_number {
+            position: absolute;
+            background: $colorPrimary;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: -12.5px;
+        }
+
+        &_caption {
+            display: flex;
+            align-items: center;
+            margin: 25px 35px;
+
+            &_icon {
+                margin-right: 20px;
+                color: #7E7E7E;
+                @include transition;
+            }
+        }
+
+        &:hover {
+            background: $colorPrimary--light;
+        }
+
+        &:hover .steps_card_caption_icon {
+            color: $colorPrimary;
+        }
+    }
+}

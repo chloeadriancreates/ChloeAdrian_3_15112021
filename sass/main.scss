@@ -1,9 +1,9 @@
 @import "./utils/colors";
+@import "./utils/mixins";
 
-@import "./base/fonts";
 @import "./base/base";
 
 @import "./components/header";
-@import "./components/place";
-@import "./components/presentation";
 @import "./components/btn";
+
+@import "./pages/home/home";
