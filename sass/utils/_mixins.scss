@@ -8,3 +8,13 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin resetLink($color: black) {
+    color: $color;
+    text-decoration: none;
+}
+
+@mixin shrikhand($size) {
+    font-family: 'Shrikhand', cursive;
+    font-size: $size;
+}

@@ -1,0 +1,29 @@
+.footer {
+    background: $grey--dark;
+    color: white;
+    padding: 25px;
+    @include flex(column, center, start);
+
+    &_title {
+        @include shrikhand(18px);
+        @include resetLink(white);
+        margin-bottom: 20px;
+    }
+
+    &_line {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &_link {
+        @include resetLink(white);
+    }
+
+    &_icon {
+        width: 15px;
+        margin-right: 10px;
+    }
+}
