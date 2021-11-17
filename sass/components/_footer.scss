@@ -27,3 +27,19 @@
         margin-right: 10px;
     }
 }
+
+@media (min-width: 1000px) {
+    .footer {
+        @include flex(row, space-between, center);
+        padding: 40px;
+
+        &_title {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        &_line {
+            margin: 0;
+        }
+    }
+}

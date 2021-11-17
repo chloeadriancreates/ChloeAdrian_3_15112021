@@ -5,9 +5,15 @@
         margin-bottom: 35px;
     }
 
-    &_card {
+    &_deckOfCards {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_card {
+        @include flex(row, start, center);
+        width: 100%;
         font-size: 16px;
         font-weight: 500;
         background: $grey--light;
@@ -53,5 +59,33 @@
         &:hover .steps_card_caption_icon {
             color: $colorPrimary;
         }
+    }
+}
+
+@media (max-width: 330px) {
+    .steps_card_caption {
+        margin: 25px;
+    }
+}
+
+@media (min-width: 550px) {
+    .steps {
+        padding: 40px;
+
+        &_card {
+            width: 30%;
+            margin: 0px 0px 0px 12.5px;
+            justify-content: center;
+
+            &_caption {
+                margin: 20px 20px 20px 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .steps_card_caption_icon {
+        font-size: 25px;
     }
 }

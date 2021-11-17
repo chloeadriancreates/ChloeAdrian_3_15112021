@@ -64,6 +64,22 @@ header {
   margin-right: 10px;
 }
 
+@media (min-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+  .footer_title {
+    margin: 0;
+    font-size: 25px;
+  }
+  .footer_line {
+    margin: 0;
+  }
+}
 .place {
   background: #EAEAEA;
   display: flex;
@@ -101,9 +117,17 @@ header {
 .steps_title {
   margin-bottom: 35px;
 }
+.steps_deckOfCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .steps_card {
   display: flex;
+  flex-direction: row;
+  justify-content: start;
   align-items: center;
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   background: #F6F6F6;
@@ -145,6 +169,29 @@ header {
   color: #9356DC;
 }
 
+@media (max-width: 330px) {
+  .steps_card_caption {
+    margin: 25px;
+  }
+}
+@media (min-width: 550px) {
+  .steps {
+    padding: 40px;
+  }
+  .steps_card {
+    width: 30%;
+    margin: 0px 0px 0px 12.5px;
+    justify-content: center;
+  }
+  .steps_card_caption {
+    margin: 20px 20px 20px 30px;
+  }
+}
+@media (min-width: 700px) {
+  .steps_card_caption_icon {
+    font-size: 25px;
+  }
+}
 .restaurants {
   background: #F6F6F6;
   padding: 60px 20px;
@@ -152,7 +199,13 @@ header {
 .restaurants_title {
   margin-bottom: 25px;
 }
+.restaurants_deckOfCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .restaurants_card {
+  width: 100%;
   color: black;
   text-decoration: none;
 }
@@ -224,6 +277,20 @@ header {
   text-decoration: none;
 }
 
+@media (min-width: 550px) {
+  .restaurants {
+    padding: 40px 40px 0px 40px;
+  }
+  .restaurants_card {
+    width: 47%;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1100px) {
+  .restaurants_card {
+    width: 22%;
+  }
+}
 h2 {
   font-size: 24px;
   font-weight: 700;
