@@ -1,7 +1,14 @@
-header {
+.header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
+    position: relative;
+
+    &_arrow {
+        position: absolute;
+        left: 25px;
+        @include resetLink;
+    }
 }
