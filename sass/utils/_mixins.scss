@@ -14,7 +14,11 @@
     text-decoration: none;
 }
 
-@mixin shrikhand($size) {
+@mixin shrikhand($size: 16px) {
     font-family: 'Shrikhand', cursive;
     font-size: $size;
+}
+
+@mixin verticalDropShadow($opacity: 0.20) {
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,$opacity);
 }

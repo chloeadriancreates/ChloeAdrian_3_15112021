@@ -31,6 +31,11 @@ header {
   font-size: 16px;
   font-weight: 500;
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+.btn--gradient:hover {
+  background: linear-gradient(0deg, #a978e3 0%, #ff94e1 100%);
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
@@ -252,6 +257,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
   padding: 20px 15px;
   background: white;
   border-radius: 0px 0px 15px 15px;
@@ -275,6 +282,9 @@ header {
   margin-right: 10px;
   color: black;
   text-decoration: none;
+}
+.restaurants_card:hover .restaurants_card_caption {
+  background: #F5EDFF;
 }
 
 @media (min-width: 550px) {

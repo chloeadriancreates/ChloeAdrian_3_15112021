@@ -11,5 +11,11 @@
         font-size: 16px;
         font-weight: 500;
         box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.20);
+        @include transition;
+
+        &:hover {
+            background: linear-gradient(0deg, color.scale($colorPrimary, $lightness: 20%) 0%, color.scale($colorSecondary, $lightness: 20%) 100%);
+            box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.30);
+        }
     }
 }
