@@ -145,10 +145,16 @@
 
 @media(min-width: 600px) {
     .menu {
-        @include flex(row, space-between, start);
+        @include flex(row, space-between, stretch);
+        padding: 15px 50px;
 
         .submenu {
             width: 30%;
+            @include flex(column, space-between, start);
+
+            &_card {
+                align-self: stretch;
+            }
         }
     }
 }

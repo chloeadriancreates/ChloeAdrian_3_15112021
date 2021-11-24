@@ -25,3 +25,20 @@
         }
     }
 }
+
+// Media queries
+
+@media (min-width: 550px) {
+    .banner {
+        height: 500px;
+        &_title {
+            padding: 50px;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .banner {
+        background-position-y: 90%;
+    }
+}
