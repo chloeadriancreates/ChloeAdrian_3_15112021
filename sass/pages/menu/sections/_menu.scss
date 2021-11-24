@@ -3,6 +3,7 @@
     padding: 15px;
 
     .submenu {
+        margin-bottom: 45px;
         
         &_heading {
             font-size: 16px;
@@ -20,6 +21,7 @@
     
         &_card {
             @include flex(row, space-between, end);
+            @include verticalDropShadow(0.08);
             margin-top: 15px;
             background: white;
             border-radius: 15px;
@@ -77,6 +79,28 @@
                     animation-fill-mode: forwards;
                 }
             }
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    .menu_item#{$i} {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: menu_item#{$i} 0.8s ease;
+        animation-fill-mode: forwards;
+        animation-delay: calc(#{$i}s / 5);
+    }
+
+    @keyframes menu_item#{$i} {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
         }
     }
 }

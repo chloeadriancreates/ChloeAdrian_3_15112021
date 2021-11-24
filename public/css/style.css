@@ -350,6 +350,9 @@ h2 {
   background: #F6F6F6;
   padding: 15px;
 }
+.menu .submenu {
+  margin-bottom: 45px;
+}
 .menu .submenu_heading {
   font-size: 16px;
   font-weight: 300;
@@ -367,6 +370,7 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.08);
   margin-top: 15px;
   background: white;
   border-radius: 15px;
@@ -419,6 +423,222 @@ h2 {
   animation-fill-mode: forwards;
 }
 
+.menu_item1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item1 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(1s / 5);
+}
+
+@keyframes menu_item1 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item2 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(2s / 5);
+}
+
+@keyframes menu_item2 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item3 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(3s / 5);
+}
+
+@keyframes menu_item3 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item4 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item4 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(4s / 5);
+}
+
+@keyframes menu_item4 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item5 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item5 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(5s / 5);
+}
+
+@keyframes menu_item5 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item6 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item6 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(6s / 5);
+}
+
+@keyframes menu_item6 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item7 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item7 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(7s / 5);
+}
+
+@keyframes menu_item7 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item8 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item8 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(8s / 5);
+}
+
+@keyframes menu_item8 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item9 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item9 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(9s / 5);
+}
+
+@keyframes menu_item9 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item10 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item10 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(10s / 5);
+}
+
+@keyframes menu_item10 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item11 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item11 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(11s / 5);
+}
+
+@keyframes menu_item11 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu_item12 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menu_item12 0.8s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(12s / 5);
+}
+
+@keyframes menu_item12 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @keyframes submenu_card_btn {
   from {
     padding: 0px;
