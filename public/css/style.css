@@ -30,6 +30,7 @@ body {
   box-shadow: none;
   color: white;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 .btn--gradient {
   padding: 20px;
@@ -349,19 +350,19 @@ h2 {
   background: #F6F6F6;
   padding: 15px;
 }
-.menu_heading {
+.menu .submenu_heading {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
   margin-left: 5px;
 }
-.menu_heading_underline {
+.menu .submenu_heading_underline {
   width: 40px;
   height: 3px;
   background: #99E2D0;
   margin: 5px 0px 0px 5px;
 }
-.menu_card {
+.menu .submenu_card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -371,7 +372,7 @@ h2 {
   border-radius: 15px;
   overflow: hidden;
 }
-.menu_card_caption {
+.menu .submenu_card_caption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -379,46 +380,46 @@ h2 {
   width: 100%;
   margin: 15px 25px 15px 15px;
 }
-.menu_card_title {
+.menu .submenu_card_title {
   margin-bottom: 5px;
   font-size: 18px;
   font-weight: 700;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu_card_descr {
+.menu .submenu_card_descr {
   font-size: 15px;
   font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu_card_price {
+.menu .submenu_card_price {
   font-size: 15px;
   font-weight: 700;
 }
-.menu_card_btn {
+.menu .submenu_card_btn {
   align-self: stretch;
   padding: 0px;
   padding: 15px;
   border-radius: 0px 15px 15px 0px;
   background: #99E2D0;
   width: 0px;
-  animation: menu_card_btn_back 1s ease;
+  animation: submenu_card_btn_back 0.5s ease;
   animation-fill-mode: forwards;
 }
-.menu_card_btn_icon {
+.menu .submenu_card_btn_icon {
   font-size: 22px;
 }
-.menu_card:hover .menu_card_btn {
-  animation: menu_card_btn 1.5s ease;
+.menu .submenu_card:hover .submenu_card_btn {
+  animation: submenu_card_btn 1s ease;
   animation-fill-mode: forwards;
 }
-.menu_card:hover .menu_card_btn_icon {
-  animation: menu_card_btn_icon 1s ease;
+.menu .submenu_card:hover .submenu_card_btn_icon {
+  animation: submenu_card_btn_icon 1s ease;
   animation-fill-mode: forwards;
 }
 
-@keyframes menu_card_btn {
+@keyframes submenu_card_btn {
   from {
     padding: 0px;
     width: 0px;
@@ -428,7 +429,7 @@ h2 {
     width: 60px;
   }
 }
-@keyframes menu_card_btn_icon {
+@keyframes submenu_card_btn_icon {
   from {
     transform: rotate(90deg);
   }
@@ -436,7 +437,7 @@ h2 {
     transform: rotate(360deg);
   }
 }
-@keyframes menu_card_btn_back {
+@keyframes submenu_card_btn_back {
   from {
     padding: 15px;
     width: 60px;

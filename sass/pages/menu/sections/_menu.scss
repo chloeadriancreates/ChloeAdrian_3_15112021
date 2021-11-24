@@ -2,83 +2,86 @@
     background: $grey--light;
     padding: 15px;
 
-    &_heading {
-        font-size: 16px;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-left: 5px;
+    .submenu {
         
-        &_underline {
-            width: 40px;
-            height: 3px;
-            background: $colorTertiary; 
-            margin: 5px 0px 0px 5px;
-        }
-    }
-
-    &_card {
-        @include flex(row, space-between, end);
-        margin-top: 15px;
-        background: white;
-        border-radius: 15px;
-        overflow: hidden;
-
-        &_caption {
-            @include flex(row, space-between, end);
-            width: 100%;
-            margin: 15px 25px 15px 15px;
-        }
-        
-        &_title {
-            margin-bottom: 5px;
-            font-size: 18px;
-            font-weight: 700;
-            // white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        &_descr {
-            font-size: 15px;
+        &_heading {
+            font-size: 16px;
             font-weight: 300;
-            // white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        &_price {
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        &_btn {
-            align-self: stretch;
-            padding: 0px;
-            padding: 15px;
-            border-radius: 0px 15px 15px 0px;
-            background: $colorTertiary;
-            width: 0px;
-            animation: menu_card_btn_back 1s ease;
-            animation-fill-mode: forwards;
-
-            &_icon {
-                font-size: 22px;
+            text-transform: uppercase;
+            margin-left: 5px;
+            
+            &_underline {
+                width: 40px;
+                height: 3px;
+                background: $colorTertiary; 
+                margin: 5px 0px 0px 5px;
             }
         }
-
-        &:hover .menu_card_btn {
-            animation: menu_card_btn 1.5s ease;
-            animation-fill-mode: forwards;
-
-            &_icon {
-                animation: menu_card_btn_icon 1s ease;
+    
+        &_card {
+            @include flex(row, space-between, end);
+            margin-top: 15px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+    
+            &_caption {
+                @include flex(row, space-between, end);
+                width: 100%;
+                margin: 15px 25px 15px 15px;
+            }
+            
+            &_title {
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-weight: 700;
+                // white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            &_descr {
+                font-size: 15px;
+                font-weight: 300;
+                // white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            &_price {
+                font-size: 15px;
+                font-weight: 700;
+            }
+    
+            &_btn {
+                align-self: stretch;
+                padding: 0px;
+                padding: 15px;
+                border-radius: 0px 15px 15px 0px;
+                background: $colorTertiary;
+                width: 0px;
+                animation: submenu_card_btn_back 0.5s ease;
                 animation-fill-mode: forwards;
+    
+                &_icon {
+                    font-size: 22px;
+                }
+            }
+    
+            &:hover .submenu_card_btn {
+                animation: submenu_card_btn 1s ease;
+                animation-fill-mode: forwards;
+    
+                &_icon {
+                    animation: submenu_card_btn_icon 1s ease;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }
 }
 
-@keyframes menu_card_btn {
+@keyframes submenu_card_btn {
     from {
         padding: 0px;
         width: 0px;
@@ -90,7 +93,7 @@
     }
 }
 
-@keyframes menu_card_btn_icon {
+@keyframes submenu_card_btn_icon {
     from {
         transform: rotate(90deg);
     }
@@ -100,7 +103,7 @@
     }
 }
 
-@keyframes menu_card_btn_back {
+@keyframes submenu_card_btn_back {
     from {
         padding: 15px;
         width: 60px;
