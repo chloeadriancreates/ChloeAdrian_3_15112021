@@ -345,4 +345,106 @@ h2 {
   margin-right: 20px;
 }
 
+.menu {
+  background: #F6F6F6;
+  padding: 15px;
+}
+.menu_heading {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+.menu_heading_underline {
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+  margin: 5px 0px 0px 5px;
+}
+.menu_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 15px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.menu_card_caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  margin: 15px 25px 15px 15px;
+}
+.menu_card_title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_card_descr {
+  font-size: 15px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_card_price {
+  font-size: 15px;
+  font-weight: 700;
+}
+.menu_card_btn {
+  align-self: stretch;
+  padding: 0px;
+  padding: 15px;
+  border-radius: 0px 15px 15px 0px;
+  background: #99E2D0;
+  width: 0px;
+  animation: menu_card_btn_back 1s ease;
+  animation-fill-mode: forwards;
+}
+.menu_card_btn_icon {
+  font-size: 22px;
+}
+.menu_card:hover .menu_card_btn {
+  animation: menu_card_btn 1.5s ease;
+  animation-fill-mode: forwards;
+}
+.menu_card:hover .menu_card_btn_icon {
+  animation: menu_card_btn_icon 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu_card_btn {
+  from {
+    padding: 0px;
+    width: 0px;
+  }
+  to {
+    padding: 15px;
+    width: 60px;
+  }
+}
+@keyframes menu_card_btn_icon {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes menu_card_btn_back {
+  from {
+    padding: 15px;
+    width: 60px;
+  }
+  to {
+    padding: 0px;
+    width: 0px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
