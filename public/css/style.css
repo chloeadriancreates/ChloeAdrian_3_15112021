@@ -422,6 +422,13 @@ h2 {
   animation: submenu_card_btn_icon 1s ease;
   animation-fill-mode: forwards;
 }
+.menu_order_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px 80px 0px;
+}
 
 .menu_item1 {
   opacity: 0;
