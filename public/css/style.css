@@ -422,13 +422,6 @@ h2 {
   animation: submenu_card_btn_icon 1s ease;
   animation-fill-mode: forwards;
 }
-.menu_order_btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 0px 80px 0px;
-}
 
 .menu_item1 {
   opacity: 0;
@@ -673,6 +666,28 @@ h2 {
     padding: 0px;
     width: 0px;
   }
+}
+@media (min-width: 600px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .menu .submenu {
+    width: 30%;
+  }
+}
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px 80px 0px;
+  background: #F6F6F6;
+}
+.order_btn {
+  padding: 20px 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

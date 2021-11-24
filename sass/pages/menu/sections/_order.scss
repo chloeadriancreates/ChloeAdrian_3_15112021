@@ -1,0 +1,9 @@
+.order {
+    @include flex(row, center, center);
+    padding: 5px 0px 80px 0px;
+    background: $grey--light;
+
+    &_btn {
+        padding: 20px 50px;
+    }
+}
