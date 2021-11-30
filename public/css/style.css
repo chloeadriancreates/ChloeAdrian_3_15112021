@@ -401,14 +401,22 @@ h2 {
   margin-bottom: 5px;
   font-size: 18px;
   font-weight: 700;
+  width: 250px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  animation: submenu_card_txt_back 0.8s ease;
+  animation-fill-mode: forwards;
 }
 .menu .submenu_card_descr {
   font-size: 15px;
   font-weight: 300;
+  width: 250px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  animation: submenu_card_txt_back 0.8s ease;
+  animation-fill-mode: forwards;
 }
 .menu .submenu_card_price {
   font-size: 15px;
@@ -427,12 +435,23 @@ h2 {
 .menu .submenu_card_btn_icon {
   font-size: 22px;
 }
+.menu .submenu_card:hover {
+  cursor: pointer;
+}
+.menu .submenu_card:hover .submenu_card_title {
+  animation: submenu_card_txt 0.8s ease;
+  animation-fill-mode: forwards;
+}
+.menu .submenu_card:hover .submenu_card_descr {
+  animation: submenu_card_txt 0.8s ease;
+  animation-fill-mode: forwards;
+}
 .menu .submenu_card:hover .submenu_card_btn {
-  animation: submenu_card_btn 1s ease;
+  animation: submenu_card_btn 0.8s ease;
   animation-fill-mode: forwards;
 }
 .menu .submenu_card:hover .submenu_card_btn_icon {
-  animation: submenu_card_btn_icon 1s ease;
+  animation: submenu_card_btn_icon 0.8s ease;
   animation-fill-mode: forwards;
 }
 
@@ -652,6 +671,38 @@ h2 {
     transform: translateY(0px);
   }
 }
+@keyframes submenu_card_txt {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 200px;
+  }
+}
+@keyframes submenu_card_txt_back {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 250px;
+  }
+}
+@keyframes submenu_card_txt--large {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 250px;
+  }
+}
+@keyframes submenu_card_txt_back--large {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 300px;
+  }
+}
 @keyframes submenu_card_btn {
   from {
     padding: 0px;
@@ -680,7 +731,12 @@ h2 {
     width: 0px;
   }
 }
-@media (min-width: 600px) {
+@media (max-width: 350px) {
+  .submenu_card_title, .submenu_card_descr {
+    width: 200px !important;
+  }
+}
+@media (min-width: 1200px) {
   .menu {
     display: flex;
     flex-direction: row;
@@ -697,6 +753,21 @@ h2 {
   }
   .menu .submenu_card {
     align-self: stretch;
+  }
+}
+@media (min-width: 1500px) {
+  .submenu_card_title, .submenu_card .submenu_card_descr {
+    width: 300px !important;
+    animation: submenu_card_txt_back--large 0.8s ease !important;
+    animation-fill-mode: forwards;
+  }
+  .submenu_card:hover .submenu_card_title {
+    animation: submenu_card_txt--large 0.8s ease !important;
+    animation-fill-mode: forwards;
+  }
+  .submenu_card:hover .submenu_card_descr {
+    animation: submenu_card_txt--large 0.8s ease !important;
+    animation-fill-mode: forwards;
   }
 }
 .order {
