@@ -1,0 +1,67 @@
+.loader {
+    position: absolute;
+    z-index: 10;
+    background: $colorTertiary;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    animation: loader 1s ease;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+    &_text {
+        @include flex(row, center, center);
+        width: 100%;
+        height: 100%;
+        animation: loader_text 0.5s ease;
+        animation-delay: 3.8s;
+        animation-fill-mode: forwards;
+    }
+    @for $i from 1 through 8 {
+        &_letter#{$i} {
+            @include shrikhand(50px);
+            animation: loader_letter 1s ease;
+            animation-delay: calc(#{$i}s / 10);
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3;
+        }
+    }
+}
+
+// Animations
+
+@keyframes loader {
+    from {
+        opacity: 1;
+        display: flex;
+    } 
+    
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes loader_text {
+    from {
+        opacity: 1;
+    } 
+    
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes loader_letter {
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-20px);
+    }
+
+    60%, 100% {
+        transform: translateY(0px);
+    }
+}

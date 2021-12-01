@@ -20,9 +20,25 @@
         }
 
         &_heart {
-            font-size: 20px;
             margin-right: 20px;
+
+            &:hover {
+                animation: banner_title_heart 0.8s ease;
+                animation-fill-mode: forwards;
+            }
         }
+    }
+}
+
+// Animations
+
+@keyframes banner_title_heart {
+    from {
+        fill: $grey--light;
+    }
+
+    to {
+        fill: $colorSecondary;
     }
 }
 

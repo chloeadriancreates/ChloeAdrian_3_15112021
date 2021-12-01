@@ -93,6 +93,122 @@ body {
     margin: 0;
   }
 }
+.loader {
+  position: absolute;
+  z-index: 10;
+  background: #99E2D0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  animation: loader 1s ease;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.loader_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: loader_text 0.5s ease;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+}
+.loader_letter1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(1s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader_letter2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(2s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader_letter3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(3s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader_letter4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(4s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader_letter5 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(5s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader_letter6 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(6s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader_letter7 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(7s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader_letter8 {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  animation: loader_letter 1s ease;
+  animation-delay: calc(8s / 10);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+
+@keyframes loader {
+  from {
+    opacity: 1;
+    display: flex;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes loader_text {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes loader_letter {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  60%, 100% {
+    transform: translateY(0px);
+  }
+}
 .place {
   background: #EAEAEA;
   display: flex;
@@ -342,10 +458,21 @@ h2 {
   font-weight: normal;
 }
 .banner_title_heart {
-  font-size: 20px;
   margin-right: 20px;
 }
+.banner_title_heart:hover {
+  animation: banner_title_heart 0.8s ease;
+  animation-fill-mode: forwards;
+}
 
+@keyframes banner_title_heart {
+  from {
+    fill: #F6F6F6;
+  }
+  to {
+    fill: #FF79DA;
+  }
+}
 @media (min-width: 550px) {
   .banner {
     height: 500px;
