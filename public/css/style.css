@@ -225,6 +225,18 @@ body {
     height: 100%;
   }
 }
+.like {
+  width: 22px;
+  height: 22px;
+  fill: #F6F6F6;
+  stroke: black;
+  transition: all 0.6s ease;
+}
+.like:hover {
+  fill: #FF79DA !important;
+  stroke: #FF79DA;
+}
+
 .place {
   background: #EAEAEA;
   display: flex;
@@ -418,13 +430,16 @@ body {
   text-decoration: none;
 }
 .restaurants_card_heart {
-  font-size: 25px;
   margin-right: 10px;
   color: black;
   text-decoration: none;
+  transition: all 0.4s ease;
 }
 .restaurants_card:hover .restaurants_card_caption {
-  background: #F5EDFF;
+  background: #ffeefa;
+}
+.restaurants_card:hover .restaurants_card_heart {
+  fill: #ffeefa;
 }
 
 @media (min-width: 550px) {
@@ -475,21 +490,8 @@ h2 {
 }
 .banner_title_heart {
   margin-right: 20px;
-  fill: #F6F6F6;
-}
-.banner_title_heart:hover {
-  animation: banner_title_heart 1s ease;
-  animation-fill-mode: forwards;
 }
 
-@keyframes banner_title_heart {
-  0% {
-    fill: #F6F6F6;
-  }
-  100% {
-    fill: #FF79DA;
-  }
-}
 @media (min-width: 550px) {
   .banner {
     height: 500px;
@@ -569,7 +571,6 @@ h2 {
 .menu .submenu_card_btn {
   align-self: stretch;
   padding: 0px;
-  padding: 15px;
   border-radius: 0px 15px 15px 0px;
   background: #99E2D0;
   width: 0px;

@@ -81,13 +81,17 @@
         }
 
         &_heart {
-            font-size: 25px;
             margin-right: 10px;
             @include resetLink;
+            @include transition;
         }
 
         &:hover .restaurants_card_caption {
-            background: $colorPrimary--light;
+            background: color.scale($colorSecondary, $lightness: 87%);
+        }
+
+        &:hover .restaurants_card_heart {
+            fill: color.scale($colorSecondary, $lightness: 87%);
         }
     }
 }

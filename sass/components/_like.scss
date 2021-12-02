@@ -1,0 +1,12 @@
+.like {
+    width: 22px;
+    height: 22px;
+    fill: $grey--light;
+    stroke: black;
+    @include transition(0.6s);
+
+    &:hover {
+        fill: $colorSecondary!important;
+        stroke: $colorSecondary;
+    }
+}
