@@ -244,3 +244,23 @@
         }
     } 
 }
+
+@media(min-width: 450px) and (max-width: 1199px) {
+    .submenu_card {
+        &_title, .submenu_card_descr {
+            width: 300px!important;
+            animation: submenu_card_txt_back--large 0.8s ease!important;
+            animation-fill-mode: forwards;
+        }
+    
+        &:hover .submenu_card_title {
+            animation: submenu_card_txt--large 0.8s ease!important;
+            animation-fill-mode: forwards;
+        }
+    
+        &:hover .submenu_card_descr {
+            animation: submenu_card_txt--large 0.8s ease!important;
+            animation-fill-mode: forwards;
+        }
+    } 
+}

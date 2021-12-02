@@ -1,6 +1,6 @@
 .loader {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     background: $colorTertiary;
     width: 100vw;
     height: 100vh;
@@ -28,17 +28,25 @@
     }
 }
 
+.content {
+    height: 100vh;
+    overflow: hidden;
+    animation: content 1s ease;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
 // Animations
 
 @keyframes loader {
     from {
         opacity: 1;
-        display: flex;
+        visibility: visible;
     } 
     
     to {
         opacity: 0;
-        display: none;
+        visibility: hidden;
     }
 }
 
@@ -63,5 +71,15 @@
 
     60%, 100% {
         transform: translateY(0px);
+    }
+}
+
+@keyframes content {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 100%;
     }
 }

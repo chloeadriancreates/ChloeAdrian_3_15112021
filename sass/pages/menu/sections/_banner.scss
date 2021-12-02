@@ -21,9 +21,10 @@
 
         &_heart {
             margin-right: 20px;
+            fill: $grey--light;
 
             &:hover {
-                animation: banner_title_heart 0.8s ease;
+                animation: banner_title_heart 1s ease;
                 animation-fill-mode: forwards;
             }
         }
@@ -33,11 +34,15 @@
 // Animations
 
 @keyframes banner_title_heart {
-    from {
+    0% {
         fill: $grey--light;
     }
 
-    to {
+    // 50% {
+    //     fill: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,121,218,1) 100%);
+    // }
+
+    100% {
         fill: $colorSecondary;
     }
 }
