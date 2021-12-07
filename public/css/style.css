@@ -527,7 +527,7 @@ h2 {
   }
 }
 @media (min-width: 1100px) {
-  .banner--aLaFrancaise {
+  .banner--aLaFrancaise, .banner--deliceDesSens, .banner--paletteDuGout {
     background-position-y: 90%;
   }
 }
