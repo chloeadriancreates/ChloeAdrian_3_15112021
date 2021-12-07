@@ -226,6 +226,8 @@ body {
   }
 }
 .like {
+  width: 22px;
+  height: 22px;
   position: relative;
 }
 .like_heart {
@@ -440,8 +442,6 @@ body {
   text-decoration: none;
 }
 .restaurants_card_heart {
-  width: 22px;
-  height: 22px;
   margin-right: 10px;
   color: black;
   text-decoration: none;
