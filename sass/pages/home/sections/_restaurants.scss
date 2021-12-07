@@ -81,6 +81,8 @@
         }
 
         &_heart {
+            width: 22px;
+            height: 22px;
             margin-right: 10px;
             @include resetLink;
             @include transition;

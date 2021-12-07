@@ -1,12 +1,26 @@
 .like {
-    width: 22px;
-    height: 22px;
-    fill: $grey--light;
-    stroke: black;
-    @include transition(0.6s);
+    position: relative;
 
-    &:hover {
-        fill: $colorSecondary!important;
-        stroke: $colorSecondary;
+    &_heart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include transition(0.5s);
+
+        &--regular {
+            opacity: 1;
+        }
+    
+        &--hover {
+            opacity: 0;
+        }
+    }
+
+    &:hover .like_heart--regular {
+        opacity: 0;
+    }
+
+    &:hover .like_heart--hover {
+        opacity: 1;
     }
 }
