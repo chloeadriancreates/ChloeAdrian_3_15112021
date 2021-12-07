@@ -480,21 +480,24 @@ h2 {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 100%;
   height: 310px;
   width: 100%;
 }
 .banner--aLaFrancaise {
   background-image: url("../img/aLaFrancaise.jpg");
+  background-position-y: 100%;
 }
 .banner--deliceDesSens {
   background-image: url("../img/deliceDesSens.jpg");
+  background-position-y: 100%;
 }
 .banner--paletteDuGout {
   background-image: url("../img/paletteDuGout.jpg");
+  background-position-y: 100%;
 }
 .banner--noteEnchantee {
   background-image: url("../img/noteEnchantee.jpg");
+  background-position-y: 65%;
 }
 .banner_title {
   display: flex;
@@ -524,7 +527,7 @@ h2 {
   }
 }
 @media (min-width: 1100px) {
-  .banner {
+  .banner--aLaFrancaise {
     background-position-y: 90%;
   }
 }
@@ -934,7 +937,7 @@ h2 {
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: start;
   }
   .menu .submenu_card {

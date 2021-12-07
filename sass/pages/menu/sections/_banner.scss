@@ -2,24 +2,27 @@
     @include flex(column, end, center);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 100%;
     height: 310px;
     width: 100%;
 
     &--aLaFrancaise {
         background-image: url("../img/aLaFrancaise.jpg");
+        background-position-y: 100%;
     }
 
     &--deliceDesSens {
         background-image: url("../img/deliceDesSens.jpg");
+        background-position-y: 100%;
     }
 
     &--paletteDuGout {
         background-image: url("../img/paletteDuGout.jpg");
+        background-position-y: 100%;
     }
 
     &--noteEnchantee {
         background-image: url("../img/noteEnchantee.jpg");
+        background-position-y: 65%;
     }
 
     &_title {
@@ -52,7 +55,7 @@
 }
 
 @media (min-width: 1100px) {
-    .banner {
+    .banner--aLaFrancaise {
         background-position-y: 90%;
     }
 }

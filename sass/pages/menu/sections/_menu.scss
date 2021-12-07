@@ -215,7 +215,7 @@
 
         .submenu {
             width: 30%;
-            @include flex(column, space-between, start);
+            @include flex(column, start, start);
 
             &_card {
                 align-self: stretch;
