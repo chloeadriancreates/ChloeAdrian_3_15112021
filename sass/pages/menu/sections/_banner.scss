@@ -1,11 +1,26 @@
 .banner {
     @include flex(column, end, center);
-    background-image: url("../img/aLaFrancaise.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 100%;
     height: 310px;
     width: 100%;
+
+    &--aLaFrancaise {
+        background-image: url("../img/aLaFrancaise.jpg");
+    }
+
+    &--deliceDesSens {
+        background-image: url("../img/deliceDesSens.jpg");
+    }
+
+    &--paletteDuGout {
+        background-image: url("../img/paletteDuGout.jpg");
+    }
+
+    &--noteEnchantee {
+        background-image: url("../img/noteEnchantee.jpg");
+    }
 
     &_title {
         @include flex(row, space-between, center);
