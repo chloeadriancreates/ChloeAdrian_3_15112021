@@ -55,7 +55,11 @@
 }
 
 @media (min-width: 1100px) {
-    .banner--aLaFrancaise, .banner--deliceDesSens, .banner--paletteDuGout {
+    .banner--aLaFrancaise, .banner--deliceDesSens {
         background-position-y: 90%;
+    }
+
+    .banner--paletteDuGout {
+        background-position-y: 80%;
     }
 }
